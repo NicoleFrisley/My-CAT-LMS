@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Content Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 50, 0.6);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 60px 0 20px;
+      color: #00ccff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 40px 60px;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+    }
+
+    .circle {
+      border-radius: 50%;
+      width: 220px;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+    }
+
+    .tall {
+      height: 400px;
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+
+    h2 {
+      color: #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: #eee;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    .floating-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00ffff;
+      color: #000;
+      padding: 12px 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      z-index: 10;
+    }
+
+    .floating-button:hover {
+      background-color: #00cccc;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .wide {
+        grid-column: span 1;
+      }
+
+      .circle {
+        width: 160px;
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="9150545-hd_1920_1080_24fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="overlay"></div>
+
+  <!-- Page Heading -->
+  <header>
+    <h1>WEB DEVELOPMENT</h1>
+    <p>Creating a Web Page Using HTML — Focus on the &lt;a&gt; Tag</p>
+  </header>
+
+  <!-- Section 1: Key Concepts -->
+  <div class="section-title">Key Concepts</div>
+  <div class="grid">
+    <div class="box">
+      <h2>1. Structure of a Basic Web Page</h2>
+      <p>Every HTML page has a basic layout. It starts with a declaration that tells the browser it's an HTML5 document. The page is then divided into two main sections: the "head" and the "body." The head contains the title of the web page, and the body contains the content that will be displayed on the page.</p>
+    </div>
+    <div class="box">
+      <h2>2. Understanding the Anchor Tag (&lt;a&gt;)</h2>
+      <p>The anchor tag is used to insert a hyperlink on a web page. It has an important attribute called href which tells the browser where the link should go.</p>
+    </div>
+    <div class="box circle">
+      <p><strong>Putting It All Together</strong><br>Learn how HTML elements work together!</p>
+    </div>
+  </div>
+
+  <!-- Section 2: In-Depth Content -->
+  <div class="section-title">3. Best Practices for Using &lt;a&gt; Tag</div>
+  <div class="grid">
+    <div class="box wide">
+      <h2>Best Practices</h2>
+      <p>Use clear and descriptive text for your links instead of writing “click here.”</p>
+      <p>Only open new tabs when necessary, and inform users if the link will open a new page.</p>
+      <p>Organize related links together in a list to make them easier to read and navigate.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 | Designed for Creative Learning by Nicole Frisley | Powered by HTML, CSS, and Love 💡
+  </footer>
+
+  <!-- Floating Button to Next Page -->
+  <a href="M3 Tasks.html" class="floating-button">Next →</a>
+
+</body>
+</html>

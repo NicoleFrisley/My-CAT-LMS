@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module Introduction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      overflow-x: hidden;
+      background: transparent;
+    }
+
+    /* Video Background */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 50, 0.5);
+      z-index: -1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 100px 20px 50px;
+    }
+
+    .container h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px black;
+      color: #00ffff;
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .cta-button {
+      padding: 14px 30px;
+      font-size: 1rem;
+      background-color: #00ffcc;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #00ddb0;
+      transform: scale(1.05);
+    }
+
+    .h5p-section {
+      margin: 60px auto;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .h5p-section h2 {
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="9150545-hd_1920_1080_24fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Optional dark overlay -->
+  <div class="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Welcome to the Module</h1>
+    <p>Get ready to explore this interactive course filled with engaging activities and resources.</p>
+    <button class="cta-button" onclick="document.getElementById('h5p-activity').scrollIntoView({ behavior: 'smooth' });">
+      Start Learning
+    </button>
+  </div>
+
+  <!-- H5P Section -->
+  <div class="h5p-section" id="h5p-activity">
+    <h2>Interactive Activity</h2>
+    
+    <!-- INSERT YOUR H5P EMBED IFRAME BELOW -->
+    <iframe src="https://app.lumi.education/api/v1/run/jIUNVv/embed"
+            height="500"
+            allowfullscreen="allowfullscreen"
+            allow="geolocation *; microphone *; camera *; midi *; encrypted-media *">
+    </iframe>
+    <script src="https://app.lumi.education/api/v1/h5p/core/js/h5p-resizer.js" charset="UTF-8"></script>
+</div>
+    <div style="text-align: right;">
+        <a href="M1 LEARNING OBJECTIVES.html">
+          <button class="cta-button">Continue to Learning Objectives</button>
+        </a>
+      </div>
+      
+
+</body>
+</html>
