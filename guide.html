@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Web Design Module</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Overlay to dim the video if needed -->
+  <div class="overlay"></div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Course Guide</h2>
+
+    <button class="dropdown-btn">Modules ⯆</button>
+    <div class="dropdown-container">
+      <a href="M1.html">Module 1</a>
+      <a href="M2.html">Module 2</a>
+      <a href="M3.html">Module 3</a>
+    </div>
+</div>
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1 class="big-text">Course Guide: Introduction to HTML and Web Development</h1>
+    <h2>Subject: Computer Applications Technology (CAT)
+        <br>
+        Grade: 10<br>
+        Curriculum: CAPS-aligned<br>
+        Course Duration: 3 Weeks<br>
+        Format: Theory and practical sessions<br><br/>
+        
+        </h2>
+    <h3>Course Overview</h3>
+    <p>This course introduces Grade 10 learners to the foundational principles of web design and development using HTML (HyperText Markup Language). <br>
+        Rooted in the South African CAPS curriculum for Computer Applications Technology, this course empowers learners with the essential digital literacy and technical skills needed for building simple, functional web pages. 
+        <br>Through engaging lessons and hands-on activities, learners will explore the structure of HTML documents, various HTML tags and elements, and basic web development techniques.</p>
+
+    <div class="custom-message"><br><br/>
+        <h3>Course Aims and Objectives</h3>
+      <p>By the end of this course, learners will be able to:
+        <ul>
+            <li>Understand what HTML is and its role in web development.</li>
+
+                <li>Write and interpret basic HTML code.</li>
+                
+                <li>Use various HTML tags and elements to structure content.</li>
+                
+                <li>Create and display simple web pages using text, images, and links.</li>
+                
+                <li>Demonstrate foundational knowledge of web development practices.</li>
+          </ul>
+          <br><br/>
+          <h2>Module Breakdown</h2><br><br/>
+
+<!-- Section 3: Content in another shape -->
+<div class="content-box">
+    <h3>Module 1: Introduction to HTML</h3>
+<b>Objective:</b> To introduce learners to the concept of HTML and its application in building web pages.<br>
+
+<b>Topics Covered:</b><br>
+
+<b>What is HTML?</b><br>
+
+The purpose of HTML in web development<br>
+
+Structure of a basic HTML document [< ! DOCTYPE html >, "< html>,"" < head>, < body>] <br>
+
+The importance of web browsers and text editors (e.g., Notepad, VS Code) <br>
+
+
+    <b>Activities:</b><br>
+
+Identifying HTML in real-world websites<br>
+
+Writing your first "Hello, world!" HTML page<br>
+<b>Assessment:</b><br>
+Short quizzes <br>
+
+        
+        </p>
+    </div>
+ 
+    <div class="content-box">
+        <h3>Module 2: Tags and Elements</h3>
+    <b>Objective:</b> To introduce learners to the concept of HTML and its application in building web pages.<br>
+    
+    <b>Topics Covered:</b><br>
+    
+    <b>Understanding tags vs. elements</b><br>
+
+        Basic tags<br>
+        
+        Creating hyperlinks with <br>
+        
+        Adding images using <br>
+        
+        Using lists <br>
+        
+        HTML attributes: src, href, alt, title<br>
+    
+    The purpose of HTML in web development<br>
+    
+    Structure of a basic HTML document [< ! DOCTYPE html >, "< html>,"" < head>, < body>] <br>
+    
+    The importance of web browsers and text editors (e.g., Notepad, VS Code) <br>
+    
+    
+        <b>Activities:</b><br>
+    
+        Making use of basic tags and elements<br>
+
+       <br>
+
+    <b>Assessment:</b><br>
+    Practical exercises<br>
+    
+    <br>
+    
+            
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h3>Module 3: Web Development</h3>
+        <b>Objective:</b> To combine knowledge from previous modules to build simple, styled websites.<br>
+        
+        <b>Topics Covered:</b><br>
+        
+        <b>Creating multi-page websites using internal linking</b><br>
+            
+            Saving, testing HTML pages<br>
+        
+            <b>Activities:</b><br>
+        
+            Build a small website project <br>
+        <b>Assessment:</b><br>
+        Major Assignment: Design and present a 2–3-page HTML website <br>
+        
+                
+                </p>
+            </div>
+
+            <p><b>Assessment Methods</b><br><br/>
+               <ul>
+                <li>Formative: Quizzes, practical coding activities, peer feedback</li>
+                
+                <li>Summative: Final web project, practical test</li>
+                
+                <li>Tools Used: HTML validators, browsers, text editors</li>
+                </ul><br><br/>
+
+                <b>Resources Needed</b>
+                <ul>
+                    <li>Computers with internet access</li>
+                
+                    <li>Text editors (e.g., Notepad++)</li>
+                    
+                    <li>Web browsers (Chrome, Firefox, Edge)</li>
+                    
+            <br><br/>
+                </ul>
+                
+                
+                <b>CAPS Alignment:</b><br>
+                This course is designed in alignment with the CAPS (Curriculum and Assessment Policy Statement) for Computer Applications Technology in Grade 10, supporting the development of:
+                <br>
+                Digital skills
+                <br>                
+                Information management
+                <br>                
+                Software application
+                <br>                
+                Problem-solving using technology
+                <br>
+                
+                </p>
+
+  <script>
+    const dropdowns = document.getElementsByClassName("dropdown-btn");
+    for (let i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

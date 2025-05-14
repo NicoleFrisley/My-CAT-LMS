@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Web Design Module</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="3141208-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Overlay to dim the video if needed -->
+  <div class="overlay"></div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>CONTENTS</h3>
+
+    <button class="dropdown-btn">COURSE ADMIN ⯆</button>
+    <div class="dropdown-container">
+      <a href="overview.html">Course Overview</a>
+      <a href="guide.html">Course Guide</a>
+    </div>
+
+    <button class="dropdown-btn">Introduction to HTML ⯆</button>
+    <div class="dropdown-container">
+      <a href="M1 INTRO.html">Introduction</a>
+      <a href="#">Learning Outcomes</a>
+      <a href="#">Content and Slides</a>
+      <a href="#">Activities and Tasks</a>
+    </div>
+
+    <button class="dropdown-btn">Tags and Elements ⯆</button>
+    <div class="dropdown-container">
+      <a href="M2 INTRO.html">Introduction</a>
+      <a href="#">Learning Outcomes</a>
+      <a href="#">Content and Slides</a>
+      <a href="#">Activities and Tasks</a>
+    </div>
+
+    <button class="dropdown-btn">Web Developer ⯆</button>
+    <div class="dropdown-container">
+      <a href="M3 INTRO.html">Introduction</a>
+      <a href="#">Learning Outcomes</a>
+      <a href="#">Content and Slides</a>
+      <a href="#">Activities and Tasks</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1 class="big-text">HTML & WEB DESIGN DASHBOARD</h1>
+    <h2>Welcome to this course!!!</h2>
+    <h3>Select a module from the sidebar to begin.</h3>
+
+    <div class="custom-message">
+      <p>Course Description:
+
+        This dynamic course introduces Grade 10 learners to the world of web development through the foundational coding language: HTML (HyperText Markup Language). 
+        <br> <br/>
+        Designed to align with the South African curriculum and 21st-century digital skills, the course empowers learners to understand, design, and build their own webpages and basic websites from scratch.
+        <br> <br/>
+        Learners will explore the structure and components of HTML, including elements, tags, attributes, hyperlinks, images, tables, and forms. Through hands-on activities and real-world projects, they will develop practical skills in planning website layouts, writing clean and functional code, and viewing their work in web browsers.
+        <br> <br/>
+        This course encourages creativity, logical thinking, and problem-solving while promoting digital literacy. By the end of the course, learners will have built their own functional multi-page website, laying a strong foundation for further studies in coding, Information Technology, or digital entrepreneurship.
+        <br> <br/>
+        <h3>Outcomes of this course:</h3>      
+        <ol></ol>
+        Understand the purpose and structure of HTML.
+        <ol></ol>
+        Create and format web content using HTML tags and elements.
+        <ol></ol>
+        Incorporate images, links, tables, and multimedia into webpages.
+        <ol></ol>
+        Design a basic multi-page website using effective layout principles.
+        <ol></ol>
+        Develop confidence in coding and digital communication.
+        <br><br/>
+        <h3>Target Audience:</h3>
+        Grade 10 learners with an interest in technology, digital design, or coding. 
+        </p>
+    </div>
+  </div>
+
+  <script>
+    const dropdowns = document.getElementsByClassName("dropdown-btn");
+    for (let i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
